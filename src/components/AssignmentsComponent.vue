@@ -2,18 +2,20 @@
   <h1>all-dAssignments</h1>
   <ul>
     <li
-      v-for="(item, index) in list"
-      :key="index"
+      v-for="item in list"
+      :key="item.id"
     >
-           {{ item.title }}
+      {{ item.title }}
     </li>
   </ul>
- 
+  <CreatePostComponent :list="list" />
 </template>
 
 <script>
  
+    import CreatePostComponent from "../components/CreatePostComponent.vue";
   export default {
+    components:{CreatePostComponent},
     data() {
       return {
         list: [
