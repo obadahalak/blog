@@ -1,5 +1,3 @@
-
 <template>
-  <router-view />
-
+<p>product</p>
 </template>
