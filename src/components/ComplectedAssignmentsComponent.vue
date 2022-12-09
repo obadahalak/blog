@@ -5,7 +5,7 @@
       v-for="(item, index) in list"
       :key="index"
     >
-           {{ item.title }}
+          {{title}}
     </li>
   </ul>
  
